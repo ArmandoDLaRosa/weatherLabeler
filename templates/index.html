@@ -1,0 +1,12 @@
+{% extends "/bases/base.html" %}
+
+{% block content %}
+<form method = "POST" action ="{{ url_for('data') }}" enctype ="multipart/form-data" >
+  <div class="form-group">
+    <label>Sky Image File Input</label>
+    <input name = "u_img" type="file" class="form-control-file" accept=".jpg, .png, .jpeg|image/*">
+  </div>
+ <input class = "btn btn-primary" type ="submit"/>
+</form>
+{% endblock %}
+
